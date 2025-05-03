@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contents.css">
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Slick Slider CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <title>atelier.A portfolio</title>
+</head>
+<body>
+    <!-- PCナビ -->
+    <aside class="pc-nav">
+        <div class="pc-nav-logo">
+            <a href="index.html">
+                <img src="images/logo_white.svg">
+            </a>
+        </div>
+        <nav>
+            <a href="index.html">Works</a>
+            <a href="profile.html">Profile</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </aside>
+
+    <!-- モバイルヘッダー -->
+    <div class="main-wrapper">
+        <div id="header" class="pc-none"></div>
+
+
+        <main class="main">
+            <!-- プロフィール -->
+            <section class="profile">
+            <p class="name">Ami Kubozono</p>
+            <p class="job">Web designer / Graphic designer</p>
+            </section>
+
+            <!-- Workセクション -->
+            <section class="work">
+                    <h1 class="section-title">Work</h1>
+
+                    <!-- タグナビ -->
+                    <div class="tag-nav">
+                        <button class="tag active" data-category="banner">Banner</button>
+                        <button class="tag" data-category="lp">LP</button>
+                        <button class="tag" data-category="site">Site</button>
+                        <button class="tag" data-category="dtp">DTP</button>
+                        <button class="tag" data-category="sns">SNS</button>
+                        <button class="tag" data-category="product">Product</button>
+                        <button class="tag" data-category="others">Others</button>
+                    </div>
+
+                    <!-- 制作実績スライダー -->
+                    <div class="works-slider">
+
+                        <!-- Bannerのコンテンツ -->
+                        <div class="work-item" data-category="banner">
+                            <div class="work-content">
+                                <p class="work-title">架空のコスメアイテム<br>メインビジュアル作成</p>
+                                <p class="work-type">グラフィックデザイン</p>
+                                <div class="bn-img">
+                                    <img src="images/kizei_lip.png" alt="KIZEI リップ">
+                                </div>
+                            </div>
+
+                            <div class="work-content">
+                                <p class="work-title">架空のコスメ X・Instagramキャンペーン<br>ビジュアル作成</p>
+                                <p class="work-type">グラフィックデザイン</p>
+                                <div class="slider">
+                                    <!-- ここにスライダー画像を挿入していく -->
+                                    <div class="slide">
+                                        <img src="images/kizei_eyepalette.png" alt="KIZEI キャンペーンバナー">
+                                    </div>
+                                    <div class="slide">
+                                        <img src="images/moroccanbeauty.png" alt="モロッカンビューティー　キャンペーンバナー">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="work-content">
+                                <p class="work-title">架空のウェディングドレスショップ<br>ビジュアル作成</p>
+                                <p class="work-type">グラフィックデザイン</p>
+                                <div class="bn-img">
+                                    <img src="images/weddinggoress.png" alt="ウェディングドレス">
+                                </div>
+                            </div>
+
+                            <div class="work-content">
+                                <p class="work-title">架空のコスメアイテム<br>ビジュアル作成</p>
+                                <p class="work-type">グラフィックデザイン</p>
+                                <div class="bn-img">
+                                    <img src="images/rans.png" alt="RANS 日焼け止め">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- LPのコンテンツ -->
+                        <div class="work-item" data-category="lp">
+                            <div class="work-content">
+                                <p class="work-title">Beaute de Sae ボーテデュサエ<br>ブランドページ作成</p>
+                                <p class="work-type">WEBデザイン / グラフィックデザイン<br>コーディング</p>
+                                <div class="slider">
+                                    <!-- ここにスライダー画像を挿入していく -->
+                                    <div class="slide">
+                                        <img src="images/beautedesae_mv.png" alt="ボーテデュサエ">
+                                    </div>
+                                </div>
+                                <div class="lp-img">
+                                    <img src="images/beautedesae_page.png" alt="ボーテデュサエ ページ">
+                                </div>
+                                <div class="lp-txt-link">
+                                    <a href="https://www.piary.jp/social-gift/beautedesae/">サイトはこちら ＞</a>
+                                </div>
+                            </div>
+
+                            <div class="work-content">
+                                <p class="work-title">Euro Japan ユーロジャパン<br>ブランドページ作成</p>
+                                <p class="work-type">WEBデザイン / グラフィックデザイン<br>コーディング</p>
+                                <div class="slider">
+                                    <!-- ここにスライダー画像を挿入していく -->
+                                    <div class="slide">
+                                        <img src="images/euroJapan_mv1.png" alt="ユーロジャパン">
+                                    </div>
+                                    <div class="slide">
+                                        <img src="images/euroJapan_mv2.png" alt="ユーロジャパン">
+                                    </div>
+                                    <div class="slide">
+                                        <img src="images/euroJapan_mv3.png" alt="ユーロジャパン">
+                                    </div>
+                                    <div class="slide">
+                                        <img src="images/euroJapan_mv4.png" alt="ユーロジャパン">
+                                    </div>
+                                </div>
+                                <div class="lp-img">
+                                    <img src="images/euroJapan_page.png" alt="ユーロジャパン ページ">
+                                </div>
+                                <div class="lp-txt-link">
+                                    <a href="https://www.piary.jp/social-gift/eurojapan/">サイトはこちら ＞</a>
+                                </div>
+                            </div>
+
+                            <div class="work-content">
+                                <p class="work-title">ソーシャルギフトサイト P.S.GIFT<br>お取り寄せレトルトカレー<br>特集ページ作成</p>
+                                <p class="work-type">WEBデザイン / グラフィックデザイン</p>
+                                <div class="slider">
+                                    <!-- ここにスライダー画像を挿入していく -->
+                                    <div class="slide">
+                                        <img src="images/curry_mv.png" alt="お取り寄せレトルトカレー">
+                                    </div>
+                                </div>
+                                <div class="lp-img">
+                                    <img src="images/curry_page.png" alt="お取り寄せレトルトカレー ページ">
+                                </div>
+                                <div class="lp-txt-link">
+                                    <a href="https://www.piary.jp/social-gift/curry/">サイトはこちら ＞</a>
+                                </div>
+                            </div>
+
+                            <div class="work-content">
+                                <p class="work-title">ソーシャルギフトサイト P.S.GIFT<br>カカオキャット<br>ブランドページ作成</p>
+                                <p class="work-type">WEBデザイン / グラフィックデザイン</p>
+                                <div class="slider">
+                                    <!-- ここにスライダー画像を挿入していく -->
+                                    <div class="slide">
+                                        <img src="images/cacaocat_mv.png" alt="カカオキャット">
+                                    </div>
+                                </div>
+                                <div class="lp-img">
+                                    <img src="images/cacaocat_page.png" alt="カカオキャット ページ">
+                                </div>
+                            </div>
+
+                            <div class="work-content">
+                                <p class="work-title">コスメブーケ<br>カカオキャット<br>特集ページ作成</p>
+                                <p class="work-type">WEBデザイン / グラフィックデザイン</p>
+                                <div class="slider">
+                                    <!-- ここにスライダー画像を挿入していく -->
+                                    <div class="slide">
+                                        <img src="images/cosmebouquet_mv.png" alt="コスメブーケ">
+                                    </div>
+                                </div>
+                                <div class="lp-img">
+                                    <img src="images/cosmebouquet_page.png" alt="コスメブーケ ページ">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- DTPのコンテンツ -->
+                        <div class="work-item" data-category="dtp">
+                            <div class="work-content">
+                                <p class="work-title">コスメブーケ<br>POP作成</p>
+                                <p class="work-type">DTPデザイン</p>
+                                <div class="dtp-img">
+                                    <img src="images/cosmebouquet_pop.png" alt="コスメブーケ POP">
+                                </div>
+                            </div>
+
+                            <div class="work-content">
+                                <p class="work-title">母の日ギフト<br>POP作成</p>
+                                <p class="work-type">DTPデザイン</p>
+                                <div class="dtp-img">
+                                    <!-- <img src="images/mothersday_pop.png" alt="母の日ギフト POP"> -->
+                                    <img src="images/mothersday_pop1.png" alt="母の日ギフト POP">
+                                    <img src="images/mothersday_pop2.png" alt="母の日ギフト POP">
+                                </div>
+                            </div>
+
+                            <div class="work-content">
+                                <p class="work-title">ソーシャルギフト P.S.GIFT<br>バレンタイン POP作成</p>
+                                <p class="work-type">DTPデザイン</p>
+                                <div class="dtp-img">
+                                    <!-- <img src="images/valentine_pop.png" alt="バレンタイン POP"> -->
+                                    <img src="images/valentine_pop1.png" alt="バレンタイン POP">
+                                    <img src="images/valentine_pop2.png" alt="バレンタイン POP">
+                                </div>
+                            </div>
+
+                            <div class="work-content">
+                                <p class="work-title">ソーシャルギフト P.S.GIFT<br>POP作成</p>
+                                <p class="work-type">DTPデザイン</p>
+                                <div class="dtp-img">
+                                    <!-- <img src="images/autumn gift_pop.png" alt="ソーシャルギフト POP"> -->
+                                    <img src="images/autumngift_pop1.png" alt="ソーシャルギフト POP">
+                                    <img src="images/autumngift_pop2.png" alt="ソーシャルギフト POP">
+                                </div>
+                            </div>
+
+                            <div class="work-content">
+                                <p class="work-title">ソーシャルギフト P.S.GIFT<br>POP作成</p>
+                                <p class="work-type">DTPデザイン</p>
+                                <div class="dtp-img">
+                                    <!-- <img src="images/wintergift_pop.png" alt="ソーシャルギフト POP"> -->
+                                    <img src="images/wintergift_pop1.png" alt="ソーシャルギフト POP">
+                                    <img src="images/wintergift_pop2.png" alt="ソーシャルギフト POP">
+                                </div>
+                            </div>
+
+                            <div class="work-content">
+                                <p class="work-title">PIARYフェスタ<br>POP作成</p>
+                                <p class="work-type">DTPデザイン</p>
+                                <div class="dtp-img">
+                                    <!-- <img src="images/piaryfesta_pop.png" alt="PIARYフェスタ POP"> -->
+                                    <img src="images/piaryfesta_pop1.png" alt="PIARYフェスタ POP">
+                                    <img src="images/piaryfesta_pop2.png" alt="PIARYフェスタ POP">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- プロダクトのコンテンツ -->
+                        <div class="work-item" data-category="product">
+                            <div class="work-content">
+                                <p class="work-title">結婚式プロフィールブック<br>「ラブ・モーメント」</p>
+                                <p class="work-type">プロダクトデザイン</p>
+                                <div class="slider">
+                                    <!-- ここにスライダー画像を挿入していく -->
+                                    <div class="slide">
+                                        <img src="images/love_moment_mv1.png" alt="ラブ・モーメント">
+                                    </div>
+                                    <div class="slide">
+                                        <img src="images/love_moment_mv2.png" alt="ラブ・モーメント">
+                                    </div>
+                                    <div class="slide">
+                                        <img src="images/love_moment_mv3.png" alt="ラブ・モーメント">
+                                    </div>
+                                </div>
+                                <div class="lp-txt-link">
+                                    <a href="https://www.piary.jp/profilebook/okb2016/">商品はこちら ＞</a>
+                                </div>
+                            </div>
+
+                            <div class="work-content">
+                                <p class="work-title">結婚式プロフィールブック<br>「ザ・ラブ・ダイアリーズ」</p>
+                                <p class="work-type">プロダクトデザイン</p>
+                                <div class="slider">
+                                    <!-- ここにスライダー画像を挿入していく -->
+                                    <div class="slide">
+                                        <img src="images/the_love_diaries_mv1.png" alt="ザ・ラブ・ダイアリーズ">
+                                    </div>
+                                    <div class="slide">
+                                        <img src="images/the_love_diaries_mv2.png" alt="ザ・ラブ・ダイアリーズ">
+                                    </div>
+                                    <div class="slide">
+                                        <img src="images/the_love_diaries_mv3.png" alt="ザ・ラブ・ダイアリーズ">
+                                    </div>
+                                </div>
+                                <div class="lp-txt-link">
+                                    <a href="https://www.piary.jp/profilebook/okb2014/">商品はこちら ＞</a>
+                                </div>
+                            </div>
+
+                            <div class="work-content">
+                                <p class="work-title">結婚式プロフィールブック<br>「ラブ・バイブス」</p>
+                                <p class="work-type">プロダクトデザイン</p>
+                                <div class="slider">
+                                    <!-- ここにスライダー画像を挿入していく -->
+                                    <div class="slide">
+                                        <img src="images/love_vibes_mv1.png" alt="ラブ・バイブス">
+                                    </div>
+                                    <div class="slide">
+                                        <img src="images/love_vibes_mv2.png" alt="ラブ・バイブス">
+                                    </div>
+                                    <div class="slide">
+                                        <img src="images/love_vibes_mv3.png" alt="ラブ・バイブス">
+                                    </div>
+                                </div>
+                                <div class="lp-txt-link">
+                                    <a href="https://www.piary.jp/profilebook/okb2017/">商品はこちら ＞</a>
+                                </div>
+                            </div>
+
+                            <div class="work-content">
+                                <p class="work-title">結婚式プロフィールブック<br>「ラブ・エディション」</p>
+                                <p class="work-type">プロダクトデザイン</p>
+                                <div class="slider">
+                                    <!-- ここにスライダー画像を挿入していく -->
+                                    <div class="slide">
+                                        <img src="images/love_edition_mv1.png" alt="ラブ・エディション">
+                                    </div>
+                                    <div class="slide">
+                                        <img src="images/love_edition_mv2.png" alt="ラブ・エディション">
+                                    </div>
+                                    <div class="slide">
+                                        <img src="images/love_edition_mv3.png" alt="ラブ・エディション">
+                                    </div>
+                                </div>
+                                <div class="lp-txt-link">
+                                    <a href="https://www.piary.jp/profilebook/okb2020/">商品はこちら ＞</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+            </section>
+        </main>
+        <div id="footer" class="pc-none"></div>
+    </div>
+
+
+
+    <!-- Slick Slider JS -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+            console.log('aaa');
+        });
+
+        $(document).ready(function() {
+            // スライダー初期化
+            $('.slider').slick({
+                arrows: true,
+                dots: true,
+                infinite: false,
+                speed: 500,
+                slidesToShow: 1,
+                slidesToScroll: 1
+            });
+
+            // 初期表示：最初のカテゴリを表示
+            var initialCategory = $('.tag.active').data('category');
+            $('.work-item').hide();
+            $('.work-item[data-category="banner"]').show(); // ←初期表示をbannerに
+
+            // タグクリック時の処理
+            $('.tag').on('click', function() {
+                $('.tag').removeClass('active');
+                $(this).addClass('active');
+
+                var category = $(this).data('category');
+                $('.work-item').hide();
+                $('.work-item[data-category="' + category + '"]').show();
+            });
+        });
+    </script>
+
+</body>
+</html>

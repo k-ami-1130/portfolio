@@ -1,0 +1,35 @@
+<header class="header">
+    <div class="header-inner">
+        <!-- 左側：ロゴ -->
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.svg" alt="atelier.A ロゴ" />
+            </a>
+        </div>
+
+        <!-- 右側：ハンバーガーメニュー -->
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <!-- メニュー（トグル表示用） -->
+    <nav class="global-nav" id="global-nav">
+        <ul>
+            <li><a href="index.html">Work</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<script>
+    $(document).ready(function () {
+        $('#hamburger').on('click', function () {
+            $(this).toggleClass('active');
+            $('#global-nav').toggleClass('active');
+        });
+    });
+</script>
