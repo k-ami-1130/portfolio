@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contents.css">
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Slick Slider CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <title>atelier.A portfolio</title>
+</head>
+<body>
+    <!-- PCナビ -->
+    <aside class="pc-nav">
+        <div class="pc-nav-logo">
+            <a href="index.html">
+                <img src="images/logo_white.svg">
+            </a>
+        </div>
+        <nav>
+            <a href="index.html">Works</a>
+            <a href="profile.html">Profile</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </aside>
+
+    <!-- モバイルヘッダー -->
+    <div class="main-wrapper">
+        <div id="header" class="pc-none"></div>
+
+        <main class="main" style="height: 960px;">
+            <!-- プロフィール -->
+            <section class="profile">
+            <p class="name">Ami Kubozono</p>
+            <p class="job">Web designer / Graphic designer</p>
+            </section>
+
+            <!-- Contactセクション -->
+            <section class="contact">
+                <h1 class="section-title">Contact</h1>
+                <p class="mail">mail : love.cocoa.ami1130@icloud.com</p>
+                <div class="contact-button">
+                    <a href="mailto:love.cocoa.ami1130@icloud.com">
+                        <img src="images/icon_mail.svg" class="icon-mail">
+                        こちらからメールでお問い合わせ
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer" class="pc-none"></div>
+    </div>
+
+    <!-- Slick Slider JS -->
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+            console.log('aaa');
+        });
+    </script>
+
+</body>
+</html>
