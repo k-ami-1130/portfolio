@@ -1,0 +1,524 @@
+@charset "UTF-8";
+
+
+@font-face {
+    font-family: 'LINE Seed_bold';
+    src:
+        url('../fonts/LINESeedJP_OTF_Bd.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'LINE Seed_rg';
+    src:
+        url('../fonts/LINESeedJP_OTF_Rg.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'LINE Seed_tn';
+    src:
+        url('../fonts/LINESeedJP_OTF_Th.woff') format('woff');
+}
+body {
+    font-family: "Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;
+    margin: 0 auto !important;
+    padding: 0;
+    color: #333;
+}
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+    font-size: 14px;
+}
+
+
+/* ヘッダー基本スタイル */
+.header {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    background: #fff;
+    z-index: 999;
+    border-bottom: 1px solid #eee;
+    transform: translate3d(0, 0, 0);
+}
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0rem 1rem;
+    max-width: 570px;
+    margin: 0 auto;
+}
+
+/* ロゴ */
+.logo img {
+    height: 2rem;
+    width: auto;
+}
+
+/* ハンバーガーメニュー */
+.hamburger {
+    width: 24px;
+    height: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #000;
+    border-radius: 1px;
+}
+
+/* ハンバーガーメニューがアクティブな状態（×印） */
+.hamburger.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+    transition: 0.3s;
+}
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+    transition: 0.3s;
+}
+.hamburger.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+    transition: 0.3s;
+}
+
+/* メニュー（初期非表示） */
+.global-nav {
+    display: none;
+    background: #DBDBDB;
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    border-top: 1px solid #eee;
+    max-width: 570px;
+    padding: 0rem 1rem;
+}
+.global-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0rem 3rem;
+}
+.global-nav li {
+    margin: 2rem 0;
+}
+.global-nav a {
+    font-family: 'LINE Seed_rg', "Helvetica Neue", Arial, sans-serif;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: #333;
+    font-size: 17px;
+}
+
+/* 表示時用クラス（JSで付与） */
+.global-nav.active {
+    display: block;
+}
+
+/* メインラッパー：スマホサイト部分 */
+.main-wrapper {
+    width: 100%;
+    max-width: 570px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.main {
+    padding: 2rem 1.3rem;
+    margin: 6rem 0rem 0rem;
+}
+
+/* PCナビ初期非表示 */
+.pc-nav {
+    display: none;
+}
+
+/* フッターの基本スタイル */
+.footer {
+    text-align: center;
+    font-family: 'LINE Seed_rg', "Helvetica Neue", Arial, sans-serif;
+    padding: 40px 20px;
+    background-color: #fff;
+    color: #000;
+}
+
+.footer-nav {
+    border-top: 1px solid #707070;
+    padding: 2rem 0rem;
+}
+
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.footer-nav li {
+    margin: 1.5rem 0;
+}
+
+.footer-nav a {
+    font-family: 'LINE Seed_rg', "Helvetica Neue", Arial, sans-serif;
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.footer-logo {
+    height: 2.5rem;
+    margin-bottom: 10px;
+}
+
+footer .copyright {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+
+/* プロフィール部分 */
+.profile {
+    margin-bottom: 3rem;
+    text-align: left;
+}
+.profile .name {
+    font-size: 16px;
+    margin: 0;
+    margin-bottom: 0.5rem;
+}
+.profile .job {
+    font-size: 16px;
+    margin: 0;
+}
+
+/* セクションタイトル　共通 */
+.section-title {
+    font-family: 'LINE Seed_rg', "Helvetica Neue", Arial, sans-serif;
+    letter-spacing: 3px;
+    font-size:30px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+/* Workセクション */
+/* タグナビ */
+.tag-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 3rem;
+    justify-content: center;
+}
+.tag-nav .tag {
+    font-family: 'LINE Seed_rg', "Helvetica Neue", Arial, sans-serif;
+    padding: 6px 22px;
+    font-size: 15px;
+    border: 1px solid #333;
+    background: #fff;
+    cursor: pointer;
+}
+.tag-nav .tag.active {
+    background: #8A8A8A;
+    border: none;
+    color: #fff;
+}
+.tag {
+    color: inherit; /* 親要素の色を引き継ぐ */
+    text-decoration: none; /* 下線を消す */
+    cursor: default; /* カーソルがリンクに見えるのを防ぐ */
+}
+
+/* 制作実績 */
+.work-content {
+    margin: 4rem 0rem;
+}
+.work-item.active {
+    display: block;
+}
+.work-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 4px;
+    text-align: center;
+}
+.work-type {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 12px;
+    text-align: center;
+}
+.work-txt {
+    font-size: 13px;
+    color: #000;
+    margin-bottom: 12px;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.work-table {
+    width: 90%;
+    border-collapse: collapse;
+    margin: auto;
+    font-size: 14px;
+    display: block;
+    padding: 0.5rem 1.5rem;
+    background-color: #F2F2F2;
+}
+.work-table td {
+    vertical-align: top;
+    padding: 1em 0.5em;
+}
+.work-table span {
+    color: #FF0000;
+}
+.work-table td:first-child {
+    white-space: nowrap;
+    width: 30%;
+}
+
+.bn-img {
+    text-align: center;
+    margin-top: 1rem;
+}
+.bn-img img {
+    width: 90%;
+    margin-bottom: 1rem;
+}
+.lp-img {
+    text-align: center;
+    margin: 1rem 0rem 2rem;
+}
+.lp-img img {
+    width: 90%;
+}
+.lp-txt-link {
+    text-align: center;
+    margin: 3rem 0rem 5rem 0rem;
+}
+.lp-txt-link a {
+    text-decoration: underline 1px solid !important;
+    font-size: 14px;
+}
+
+.dtp-img {
+    text-align: center;
+    margin-top: 1rem;
+}
+.dtp-img img {
+    width: 90%;
+    margin-bottom: 1rem;
+}
+
+/* スライダー */
+.slider {
+    width: 100%;
+    position: relative;
+    margin-bottom: 2em;
+}
+.slider .slide {
+    width: 100%;
+}
+.slider img {
+    width: 95%;
+    border-radius: 8px;
+    margin: auto;
+}
+
+/* 前の矢印 */
+.slick-prev {
+    position: absolute;
+    top: 50%;
+    left: 10px; /* 必要に応じて調整 */
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+/* 次の矢印 */
+.slick-next {
+    position: absolute;
+    top: 50%;
+    right: 10px; /* 必要に応じて調整 */
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+/* 矢印のスタイル */
+.slick-prev:before {
+    font-size: 24px;
+    color: #333;
+}
+
+.slick-next:before {
+    font-size: 24px;
+    color: #333;
+}
+
+/* ドットインジケーターのスタイル */
+.slick-dots {
+    text-align: center;
+    margin-top: 10px;
+}
+.slick-dots li button:before {
+    color: #888; /* ドットの色 */
+    font-size: 8px !important; /* ドットのサイズ */
+    margin: 0.3em 0em;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #000; /* アクティブなドットの色 */
+}
+
+
+/* コンタクト */
+.contact {
+    margin-bottom: 3rem;
+    text-align: left;
+}
+.mail {
+    text-align: center;
+    font-size: 13px;
+    margin: 1.5rem;
+}
+.contact-button {
+    text-align: center;
+}
+.contact-button a{
+    background-color: #8A8A8A;
+    padding: 0.7rem 1rem;
+    text-align: center;
+    margin: auto;
+    text-decoration: none;
+    color: #FFF !important;
+    font-size: 13px;
+}
+.icon-mail {
+    height: 17px;
+    margin-right: 1rem;
+}
+
+
+/* プロフィールページ */
+.profile-img {
+    width: 100%;
+    display: block;
+    margin: 1em auto;
+}
+
+.profile-mainttl {
+    font-family: 'LINE Seed_rg', "Helvetica Neue", Arial, sans-serif;
+    letter-spacing: 1px;
+    margin-top: 2em;
+    font-size: 20px;
+    color: #FF0000;
+}
+
+.profile-subttl {
+    font-family: 'LINE Seed_rg', "Helvetica Neue", Arial, sans-serif;
+    letter-spacing: 1px;
+    margin-top: 1em;
+    font-size: 18px;
+}
+
+.skill-group {
+    background-color: #F2F2F2;
+    padding: 1rem 1.5rem;
+    font-size: 14px;
+}
+.skill-group ul {
+    padding-left: 0;
+}
+.skill-group ul li {
+    list-style:none;
+    margin-bottom: 0.5em;
+}
+
+.history-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1em;
+    font-size: 14px;
+}
+.history-table td {
+    vertical-align: top;
+    padding: 1em 0;
+}
+.history-table td:first-child {
+    white-space: nowrap;
+    width: 30%;
+}
+
+
+
+
+
+/* レスポンシブ：1230px以上でPCモード */
+@media (min-width: 1230px) {
+    body {
+        display: flex;
+        flex-direction: row;
+        background-color: #DBDBDB;
+    }
+    .pc-none{
+        display: none;
+    }
+
+    /* 左固定ナビ */
+    .pc-nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        left: 10rem;
+        top: 0;
+        width: 300px;
+        height: 100vh;
+    }
+    .pc-nav-logo img{
+        height: 4rem;
+        margin-bottom: 3rem;
+    }
+    .pc-nav nav a {
+        display: block;
+        font-family: 'LINE Seed_rg', "Helvetica Neue", Arial, sans-serif;
+        letter-spacing: 1px;
+        margin-bottom: 2rem;
+        text-decoration: none;
+        color: #FF0000 !important;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    /* 右側にスマホサイトを配置 */
+    .main-wrapper {
+        margin-left: auto;
+        margin-right: 10rem;
+        max-width: 570px;
+        width: 100%;
+        padding: 0rem 2rem;
+        margin-top: 4rem;
+        border-radius: 50px 50px 0px 0px;
+    }
+    .main {
+        margin: 3rem 0rem 6rem 0rem;
+    }
+
+    /* ハンバーガーを非表示にする */
+    .hamburger {
+    display: none;
+    }
+}
